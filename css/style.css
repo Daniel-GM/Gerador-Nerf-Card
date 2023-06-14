@@ -1,0 +1,229 @@
+:root{
+  --cor-primaria: #1b1b1b;
+  --cor-secundaria: #fff;
+  --placeholder: #1b1b1b
+}
+
+::placeholder {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+  color: var(--placeholder);
+}
+
+html, 
+body {
+  margin: 0px;
+  width: 100%;
+  background-color: var(--cor-primaria);
+  color: var(--cor-secundaria);
+}
+
+html, 
+body {
+  height: auto;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#option-gerador {
+  width: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 115px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label.icon-option {
+  opacity: 40%;
+  cursor: pointer;
+}
+
+label.icon-option:hover {
+  opacity: 65%; 
+}
+
+input[type="radio"]:checked+label.icon-option {
+  opacity: 100%;
+}
+
+h5 {
+  font-family: 'poppins';
+  font-weight: 500;
+  font-size: 16px;
+  margin: 0px;
+}
+
+#gerador {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  height: 55%;
+}
+
+#qrcode img {
+  width: 300px;
+  height: 300px;
+}
+
+.qrcode-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+#div-qrcode,
+#div-link,
+#div-dominio {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+  width: 100%;
+}
+
+#div-qrcode {
+  display: none;
+}
+
+.file-label, 
+.btn-form, 
+#download-form,
+#loading, 
+.input-text {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-primaria);
+  text-align: center;
+  padding: 5px;
+  border-radius: 200px;
+  margin-bottom: 20px;
+  width: 50%;
+}
+
+.input-text {
+  text-align: center;
+}
+
+div#div-cor {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.grupo-cor, 
+.div-cardapio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#cor,
+#cor-site {
+  position: absolute;
+  opacity: 0;
+}
+
+#pseudo-color-input,
+#pseudo-color-input-text {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: solid 1px #fff;
+  border-radius: 100px;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.btn-form, 
+#download-form {
+  width: 25%;
+}
+
+.file-input {
+  display: none;
+}
+
+div#result, 
+div#result-qrcode {
+  height: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 0px 20px;
+}
+
+div#result-qrcode {
+  visibility: hidden;
+}
+
+.comanda {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 20px 0px 20px;
+  margin-bottom: 20px;
+}
+
+canvas {
+  margin: 0px 20px 20px;
+}
+
+#download-form,
+#loading {
+  display: none;
+}
+
+#loading {
+  padding: 0;
+}
+
+#text-loading {
+  color: #fff;
+  margin: 0;
+}
+
+#file-img-logo {
+  height: 100px;
+  width: 120px;
+  display: none;
+}
+
+p.text-qrcode,
+#file-count-logo,
+#file-img-logo {
+  margin: 0 0 5px 0;
+}
+
+#file-count-logo,
+#file-count-logo-sigesis,
+.text-qrcode {
+  color: red;
+}
+
+.file-label {
+  margin-bottom: 20px;
+}
+
+#cor,
+#cor-site,
+.text-label {
+  cursor: pointer;
+}
+
+#alert-qrcode {
+  display: none;
+}
